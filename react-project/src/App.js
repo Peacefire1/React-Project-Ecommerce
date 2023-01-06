@@ -5,6 +5,7 @@ import Header from './components/header';
 import MainMenu from './components/MainMenu';
 import Sliders1 from './components/slider';
 import Sliders2 from './components/sliderItems';
+import Products from './components/products';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MainMenu />
       <Sliders1 />
       <Sliders2 />
+      <Products />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Sliders2(props) {
     const crouselData2 = carouselData2.map(el => {
         return (
             <div className="container d-flex justify-content-around">
-                <div className="border  rounded-3 d-flex align-items-center justify-content-between w-80 p-4">
+                <div className="card d-flex align-items-center justify-content-between w-80 p-4 m-0">
 
                     <div className="d-flex">
                         <img src={el.url} className={el.style} id="sliders2-img" />
@@ -24,11 +24,12 @@ function Sliders2(props) {
         )
     })
     return (
-        < AliceCarousel responsive={{
-            1028: {
+        < AliceCarousel className="container"  disableDotsControls = "true" responsive={{
+            0: {
                 items: 3
             }
-        }}>
+        }
+        }>
             {crouselData2}
         </AliceCarousel >
     )
