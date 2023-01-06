@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   max-width: 1440px;
 }
@@ -37,39 +37,57 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 
-.contact{
+.contact {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.contact-end{
+.contact-end {
   width: 28%;
   display: flex;
   justify-content: space-between;
 }
 
-.Header{
+.Header {
   display: flex;
   height: 100px;
   background-color: #003F62;
+  justify-content: space-between;
 }
 
-.Header img{
+.Header img {
   width: 100px;
 }
-.input-group{
+
+.input-group {
   height: 50px;
   width: 438px;
 }
 
 .a {
-   text-decoration: none;
-   color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
+  margin: 10px;
+}
+
+.free-return {
+  color: #003F62;
+}
+
+
+#img {
+  width: 300px;
+}
+
+#sliders2-img {
+  width: 200px;
+  height: 100px;
 }
