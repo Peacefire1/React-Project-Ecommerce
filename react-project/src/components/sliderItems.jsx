@@ -3,7 +3,7 @@ import { React } from "react";
 import AliceCarousel from 'react-alice-carousel'
 import { carouselData2 } from "../data/slider";
 
-function Sliders2(props) {
+function Sliders2() {
     const crouselData2 = carouselData2.map(el => {
         return (
             <div className="container d-flex justify-content-around">
