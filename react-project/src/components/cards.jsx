@@ -7,7 +7,7 @@ function Cards() {
     const cardsData = cardData.map(dataEl => {
         return (
             <div className='container d-flex justify-content-around flex-wrap my-5'>
-                <div class="card m-1 w-50">
+                <div class="card m-1 w-100">
                     <img id='cardsImg' src={dataEl.img} class="card-img-top" />
                     <div class="card-body">
                         <h5 class="card-title text-start">{dataEl.name}</h5>
@@ -20,23 +20,20 @@ function Cards() {
         )
     })
     return (
-        <div>
 
-            < AliceCarousel className="container" disableButtonsControls="true" responsive={{
-                0: {
-                    items: 1,
-                },
-                1024: {
-                    items: 3,
-                    itemsFit: 'contain',
-                }
-            }} >
-                {cardsData}
-            </AliceCarousel>
-            < AliceCarousel className="container" disableButtonsControls="true" responsive={{ 1280: { items: 3 } }} >
-                {cardsData}
-            </AliceCarousel>
-        </div>
+        < AliceCarousel className="container d-flex" disableButtonsControls="true" responsive={{
+            0: {
+                items: 1,
+            },
+            1024: {
+                items: 4,
+                itemsFit: 'contain',
+            }
+        }} >
+            {cardsData}
+
+        </AliceCarousel>
+
     )
 }
 

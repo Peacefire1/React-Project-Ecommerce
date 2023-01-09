@@ -20,7 +20,7 @@ function App() {
       <Cards />
       <div className="banner">
         <input type="button" value="New laptop" />
-        <h2>Sale u to 50% off</h2>
+        <h1>Sale u to 50% off</h1>
         <p>12 inch hd display</p>
         <input type="button" value="Shop Now" />
       </div>
