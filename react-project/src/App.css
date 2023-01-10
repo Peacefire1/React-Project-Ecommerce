@@ -106,8 +106,6 @@
   height: 500px;
   color: white;
   padding-top: 100px;
-  padding-left: 800px;
-  margin-left: 80px;
 }
 
 .banner h1 {
@@ -121,4 +119,24 @@
   border-radius: 20px;
   height: 50px;
   width: 200px;
+}
+
+.mid_card img {
+  width: 200px;
+}
+
+
+.RCard {
+  height: 230px;
+}
+
+.ban {
+  width: 80%;
+  text-align: end;
+}
+
+
+.blue {
+  display: flex;
+  justify-content: center;
 }
