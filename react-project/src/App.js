@@ -7,6 +7,7 @@ import Sliders1 from './components/slider';
 import Sliders2 from './components/sliderItems';
 import Products from './components/products';
 import Cards from './components/cards';
+import UserCardData1 from './components/userCard';
 
 function App() {
   return (
@@ -91,6 +92,19 @@ function App() {
         </div>
       </div>
       {/* Blue section  */}
+      {/* userCard  */}
+      <UserCardData1 />
+      {/* userCard  */}
+
+      {/* Logos  */}
+      <div className='d-flex'>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+      {/* Logos  */}
     </div>
   );
 }

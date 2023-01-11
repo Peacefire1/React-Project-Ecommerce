@@ -79,6 +79,30 @@ const cardData = [
                 name: "Tablet as laptop",
                 price: "$11,70",
             },
+            {
+                id: 5,
+                img: "images/Controller.png",
+                name: "Play game",
+                price: "$11,70",
+            },
+            {
+                id: 6,
+                img: "images/laptop.png",
+                name: "Tablet as laptop",
+                price: "$11,70",
+            },
+            {
+                id: 7,
+                img: "images/Controller.png",
+                name: "Play game",
+                price: "$11,70",
+            },
+            {
+                id: 8,
+                img: "images/laptop.png",
+                name: "Tablet as laptop",
+                price: "$11,70",
+            },
         ]
     },
     {
@@ -106,6 +130,30 @@ const cardData = [
                 id: 12,
                 img: "images/camera.png",
                 name: "Camera",
+                price: "$11,70",
+            },
+            {
+                id: 5,
+                img: "images/Controller.png",
+                name: "Play game",
+                price: "$11,70",
+            },
+            {
+                id: 6,
+                img: "images/laptop.png",
+                name: "Tablet as laptop",
+                price: "$11,70",
+            },
+            {
+                id: 7,
+                img: "images/Controller.png",
+                name: "Play game",
+                price: "$11,70",
+            },
+            {
+                id: 8,
+                img: "images/laptop.png",
+                name: "Tablet as laptop",
                 price: "$11,70",
             },
         ]
