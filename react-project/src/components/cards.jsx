@@ -2,13 +2,17 @@ import React from 'react'
 import cardData from '../data/card'
 import AliceCarousel from 'react-alice-carousel'
 import ReactStars from "react-rating-stars-component";
+import { useState } from 'react';
 
-function Cards() {
+function Cards(props) {
     const cardsData = cardData.map(dataEl => {
         const children = dataEl.children.map(c => {
             return (
-                <div className="card w-25">
+                <div className="cards1 card p-2 m-2">
                     <img id='cardsImg' src={c.img} className="card-img-top" />
+                    <img className='pointer' src="images/heart.png" alt="" onClick={() => {
+                        props.setWishList(props.wishList + 1)
+                    }} />
                     <div className="card-body">
                         <h5 className="card-title text-start">{c.name}</h5>
                         <p className="card-text text-start">{c.price}</p>
