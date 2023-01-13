@@ -8,17 +8,23 @@ import Sliders2 from './components/sliderItems';
 import Products from './components/products';
 import Cards from './components/cards';
 import UserCardData1 from './components/userCard';
+import { Bootstrap } from 'react-bootstrap-icons';
+import News from './components/LatesNews';
+import Footer from './components/footer';
+import { useState } from 'react';
 
 function App() {
+  const [wishList, setWishList] = useState(0)
+  const [addList, setAddList] = useState([])
   return (
     <div className="App">
       <Contact />
-      <Header />
+      <Header wishList={wishList} addList={addList} />
       <MainMenu />
       <Sliders1 />
       <Sliders2 />
       <Products />
-      <Cards />
+      <Cards wishList={wishList} setWishList={setWishList} />
 
       {/* Banner Section  */}
       <div className="container banner">
@@ -97,14 +103,20 @@ function App() {
       {/* userCard  */}
 
       {/* Logos  */}
-      <div className='d-flex'>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div className='bg-info d-flex justify-content-around logos rounded-4'>
+        <img src="images/logo1.png" alt="" />
+        <img src="images/logo2.png" alt="" />
+        <img src="images/logo3.png" alt="" />
+        <img src="images/logo4.png" alt="" />
+        <img src="images/logo5.png" alt="" />
       </div>
       {/* Logos  */}
+      <div className="d-flex my-3 newstitle">
+        <h4>Latest news</h4>
+        <a href="3">View all</a>
+      </div>
+      <News />
+      <Footer />
     </div>
   );
 }

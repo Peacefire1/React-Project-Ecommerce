@@ -140,3 +140,33 @@
   display: flex;
   justify-content: center;
 }
+
+
+.logos {
+  height: 100px;
+}
+
+.latestnews {
+  height: 400px;
+}
+
+.callUs p {
+  margin: 0;
+}
+
+.cards1 {
+  width: 23%;
+}
+
+.wish {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(173, 144, 144);
+  top: 150px;
+  z-index: 99;
+}
+
+.pointer {
+  cursor: pointer;
+}
