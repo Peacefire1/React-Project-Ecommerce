@@ -12,6 +12,7 @@ function Cards(props) {
                     <img id='cardsImg' src={c.img} className="card-img-top" />
                     <img className='pointer' src="images/heart.png" alt="" onClick={() => {
                         props.setWishList(props.wishList + 1)
+                        console.log(props.wishList);
                     }} />
                     <div className="card-body">
                         <h5 className="card-title text-start">{c.name}</h5>
