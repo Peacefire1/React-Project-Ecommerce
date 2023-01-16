@@ -8,10 +8,12 @@ import Sliders2 from './components/sliderItems';
 import Products from './components/products';
 import Cards from './components/cards';
 import UserCardData1 from './components/userCard';
-import { Bootstrap } from 'react-bootstrap-icons';
 import News from './components/LatesNews';
 import Footer from './components/footer';
 import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import SignIn from './components/navbar/home';
+
 
 function App() {
   const [wishList, setWishList] = useState(0)
@@ -20,6 +22,10 @@ function App() {
     <div className="App">
       <Contact />
       <Header wishList={wishList} addList={addList} />
+      <Routes>
+
+        <Route path='signIn' element={<SignIn />} />
+      </Routes>
       <MainMenu />
       <Sliders1 />
       <Sliders2 />

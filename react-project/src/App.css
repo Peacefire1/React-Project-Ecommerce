@@ -170,3 +170,7 @@
 .pointer {
   cursor: pointer;
 }
+
+.white-search {
+  height: 100px;
+}
