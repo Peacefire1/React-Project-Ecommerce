@@ -1,35 +1,18 @@
 import React from 'react'
 import cardData from '../data/card'
 import AliceCarousel from 'react-alice-carousel'
-import ReactStars from "react-rating-stars-component";
-import { useState } from 'react';
+import SliderCards from './SlidersCards';
 
 function Cards(props) {
-    const cardsData = cardData.map(dataEl => {
-        const children = dataEl.children.map(c => {
+    // const liked = props.wishList.filter((wish) => wish.id === props.)
+    const cardsData = cardData.map((dataEl) => {
+        const children = dataEl.children.map((c) => {
             return (
-                <div className="cards1 card p-2 m-2">
-                    <img id='cardsImg' src={c.img} className="card-img-top" />
-                    <img className='pointer' src="images/heart.png" alt="" onClick={() => {
-                        props.setWishList(props.wishList + 1)
-                        console.log(props.wishList);
-                    }} />
-                    <div className="card-body">
-                        <h5 className="card-title text-start">{c.name}</h5>
-                        <p className="card-text text-start">{c.price}</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <ReactStars
-                        count={5}
-                        size={24}
-                        isHalf={true}
-                        emptyIcon={<i className="far fa-star"></i>}
-                        halfIcon={<i className="fa fa-star-half-alt"></i>}
-                        fullIcon={<i className="fa fa-star"></i>}
-                        activeColor="#ffd700"
-                    />,
-
-                </div>
+                <SliderCards
+                    c={c}
+                    wishlist={props.wishList}
+                    setwishlist={props.setWishList}
+                />
             )
         })
 

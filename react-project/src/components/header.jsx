@@ -20,7 +20,7 @@ function Header(props) {
                 </div>
                 <div className="d-flex align-items-center">
                     <a className="a" href="/signIn" ><Person /> Sign in</a>
-                    <a className="a" href="#" onClick={wishlistFunc} ><Heart /> {props.wishList} </a>
+                    <a className="a" onClick={wishlistFunc} ><Heart /> {props.wishList.length} </a>
                     <a className="a" href="#" ><Cart3 /> 0</a>
                     {wish ? <div className="wish">{props.wishList}</div> : ""}
 
