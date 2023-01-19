@@ -16,12 +16,12 @@ import SignIn from './components/navbar/home';
 
 
 function App() {
-  const [wishList, setWishList] = useState(0)
+  const [wishList, setWishList] = useState([])
   const [addList, setAddList] = useState([])
   return (
     <div className="App">
       <Contact />
-      <Header wishList={wishList} addList={addList} />
+      <Header wishList={wishList} setWishList={setWishList} />
       <Routes>
 
         <Route path='signIn' element={<SignIn />} />
