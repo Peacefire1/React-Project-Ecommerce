@@ -13,9 +13,9 @@ function Header(props) {
             <div className="container d-flex justify-content-between py-4">
                 <div className="d-flex">
                     <img src={logo} alt="logo" className="mx-5" />
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                        <button class="btn btn-warning" type="button" id="button-addon2">Search</button>
+                    <div className="input-group">
+                        <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <button className="btn btn-warning" type="button" id="button-addon2">Search</button>
                     </div>
                 </div>
                 <div className="d-flex align-items-center">
