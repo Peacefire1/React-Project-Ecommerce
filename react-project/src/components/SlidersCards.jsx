@@ -5,13 +5,13 @@ import { Heart, HeartFill, } from "react-bootstrap-icons"
 export default function SliderCards(props) {
 
     const c = props.c
-    const liked = props.wishlist.filter((wish) =>
-        wish.id === props.c.id
-    )[0]
+    // const liked = props.wishlist.filter((wish) =>
+    //     wish.id === props.c.id
+    // )[0]
     return (
         <div className="cards1 card p-2 m-2">
             <img id='cardsImg' src={c.img} className="card-img-top" />
-            <a onClick={() => {
+            {/* <a onClick={() => {
                 if (!liked) {
                     const likedProduct = {
                         id: c.id,
@@ -26,9 +26,9 @@ export default function SliderCards(props) {
             }}>
                 {liked ? (
                     <HeartFill />
-                ) : (<Heart />)}
+                ) : (<Heart />)} */}
 
-            </a>
+            {/* </a> */}
             <div className="card-body">
                 <h5 className="card-title text-start">{c.name}</h5>
                 <p className="card-text text-start">{c.price}</p>

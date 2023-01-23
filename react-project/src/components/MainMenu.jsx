@@ -13,7 +13,7 @@ function MainMenu() {
     return (
         <div className="bg-light">
 
-            <div className="container d-flex align-items-center justify-content-between">            
+            <div className="container d-flex align-items-center justify-content-between">
                 <div className="d-flex">
                     <button class="btn bg-warning rounded-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown button
